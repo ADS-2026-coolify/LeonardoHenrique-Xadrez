@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xadrez</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>♞ Xadrez</h1>
+
+  <main class="layout">
+    <section class="board-area">
+      <div class="player-bar" id="bar-top"></div>
+      <div class="board" id="board"></div>
+      <div class="player-bar" id="bar-bottom"></div>
+    </section>
+
+    <aside class="panel">
+      <div class="status" id="status"></div>
+      <div class="buttons">
+        <button id="btn-new">Novo jogo</button>
+        <button id="btn-undo">Desfazer</button>
+        <button id="btn-flip">Virar tabuleiro</button>
+      </div>
+      <h2>Lances</h2>
+      <ol class="moves" id="moves"></ol>
+    </aside>
+  </main>
+
+  <div class="modal" id="promo-modal" hidden>
+    <div class="modal-box">
+      <p>Promover peão para:</p>
+      <div class="promo-options" id="promo-options"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
