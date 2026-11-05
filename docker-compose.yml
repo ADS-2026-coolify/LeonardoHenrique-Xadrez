@@ -1,0 +1,8 @@
+services:
+  xadrez:
+    build: .
+    restart: unless-stopped
+    # O Coolify cuida do domínio e do HTTPS pelo proxy dele.
+    # Para rodar localmente, troque "expose" por: ports: ["8080:80"]
+    expose:
+      - "80"
